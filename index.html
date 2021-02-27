@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Calculator</title>
+    <link rel="stylesheet" href="./assets/style/normalize/normalize.css">
+    <link rel="stylesheet" href="./assets/font/font.css">
+    <link rel="stylesheet" href="./assets/style/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div id="header__img" class="header__img">
+            <img id="dg" src="./assets/imgs/icons/dg.png" alt="icon of creator">
+        </div>
+        <div id="header__title" class="header__title header__title--withRadius">
+            <h1 id="Standard">Standard Calculator</h1>
+        </div>
+        <div id="header__img" class="header__img">
+            <img id="github" src="./assets/imgs/icons/github.png" alt="icon of github">
+        </div>
+        <div id="header__calculators" class="header__calculators">
+                <div id="header__title" class="header__title header__title--calculators header__title--colorGreen">
+                    <h1 id="Scientific">Scientific Calculator</h1>
+                </div>
+                <div id="header__title" class="header__title header__title--calculators">
+                    <h1 id="Binary">Binary Calculator</h1>
+                </div>
+                <div id="header__title" class="header__title header__title--calculators header__title--colorGreen">
+                    <h1 id="Currency">Currency Calculator</h1>
+                </div>
+                <div id="header__title" class="header__title header__title--calculators header__title--last">
+                    <h1 id="Matrix">Matrix Calculator</h1>
+                </div>
+            <img id="header__btn" class="header__btn" src="./assets/imgs/icons/triangle.png" alt="button for see the options">
+        </div>
+    </header>
+    <div id="hover" class="hover hover--selected"></div>
+    <main>
+        <div class="calculator">
+            <div class="calculator__content">
+                <div class="calculator__result">
+                    <p id="result">0</p>
+                </div>
+                <div class="calculator__buttons">
+                    <div id="buttons" class="calculator__row calculator__row--first">
+                        <button id="btn__parenthL" class="calculator__button button--darkGrey" >(</button>
+                        <button id="btn__parenthR" class="calculator__button button--darkGrey" >)</button>
+                        <button id="btn__9" class="calculator__button" >9</button>
+                        <button id="btn__8" class="calculator__button" >8</button>
+                        <button id="btn__7" class="calculator__button" >7</button>
+                        <button id="btn__AC" class="calculator__button button--green">AC</button>
+                        <button id="btn__Del" class="calculator__button button--darkGrey">Del</button>
+                    </div>
+                    <div id="buttons" class="calculator__row">
+                        <button id="btn__sqrt" class="calculator__button button--darkGrey" >√</button>
+                        <button id="btn__6" class="calculator__button" >6</button>
+                        <button id="btn__5" class="calculator__button" >5</button>
+                        <button id="btn__4" class="calculator__button" >4</button>
+                        <button id="btn__multiply" class="calculator__button button--darkGrey" >*</button>
+                        <button id="btn__division" class="calculator__button button--darkGrey" >/</button>
+                    </div>
+                    <div id="buttons" class="calculator__row">
+                        <button id="btn__pow" class="calculator__button button--darkGrey">n^</button>
+                        <button id="btn__3" class="calculator__button" >3</button>
+                        <button id="btn__2" class="calculator__button" >2</button>
+                        <button id="btn__1" class="calculator__button" >1</button>
+                        <button id="btn__plus" class="calculator__button button--darkGrey" >+</button>
+                        <button id="btn__minus" class="calculator__button button--darkGrey" >-</button>
+                    </div>
+                    <div id="buttons" class="calculator__row calculator__row--last">
+                        <button id="Change" class="calculator__button button--green">Change</button>
+                        <button id="btn__0" class="calculator__button" >0</button>
+                        <button id="btn__dot" class="calculator__button" >.</button>
+                        <button id="btn__comma" class="calculator__button" >,</button>
+                        <button id="btn__solve" class="calculator__button button--green" >=</button>
+                    </div>
+                </div>
+            </div>
+            <div id="div__error"class="errors">
+                <p id="error">Check the syntax</p>
+            </div>
+            <div class="inputEvent">
+                <input type="text" placeholder="Write the operation here" id="key__input">
+            </div>
+            <div class="faq">
+                <button id="howToUse" class="calculator__button calculator__button--howToUse">How to use</button>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./assets/scripts/index.js"></script>
+    <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+</body>
+</html>

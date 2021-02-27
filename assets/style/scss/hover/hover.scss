@@ -1,0 +1,15 @@
+.hover {
+    transition          :       $transition;
+    z-index             :       $modal;
+    position            :       fixed;
+    width               :       100vw;
+    height              :       100vh;
+    background-color    :       $color--darkGray;
+    opacity             :       .8;
+    display             :       block;
+}
+
+.hover--selected {
+    opacity             :       0;
+    display             :       none;
+}

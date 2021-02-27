@@ -1,0 +1,120 @@
+.titleSection {
+    z-index                 :       $modal;
+    position                :       absolute;
+    background-color        :       $color--darkGray;
+    border-radius           :       1rem;
+    border                  :       1px solid $color--clearGray;
+    margin-left             :       var(--margin-left);
+    margin-top              :       43.2rem;
+    color                   :       $color--green;
+
+    p {
+        font-size           :       1.25rem;
+        padding             :       .5rem 1rem;
+        margin              :       .5rem 1rem;
+    }
+
+    @include from(galaxyfold) {
+    margin-top              :       41.2rem;
+    }
+
+    @include from(xc) {
+    margin-top              :       42.2rem;
+    }
+
+    @include from(c) {
+    margin-top              :       27.8rem;
+    }
+
+    @include from(cs) {
+    margin-top              :       25.5rem;
+    }
+
+    @include from(iPad) {
+    margin-top              :       20rem;
+    }
+}
+
+.aboutme--skills {
+    background-color        :       $background--color;
+    margin-top              :       53rem;
+
+    @include from(galaxyfold) {
+    margin-top              :       52rem;
+    }
+
+    @include from(c) {
+    margin-top              :       38rem;
+    }
+
+    @include from(cs) {
+    margin-top              :       36rem;
+    }
+
+    @include from(iPad) {
+    margin-top              :       30rem;
+    }
+}
+
+.aboutme__contentskills {
+    cursor                  :       pointer;
+    display                 :       grid;
+    grid-template-columns   :       repeat(1,1fr);
+    border-radius           :       1rem;
+
+    @include from(cs) {
+    grid-template-columns   :       repeat(2,1fr);
+    }
+}
+
+.aboutme__skill {
+    background-color        :       $color--darkGray;
+    border-radius           :       1rem;
+    margin                  :       1rem;
+    display                 :       flex;
+    justify-content         :       space-around;
+    p {
+    padding-left            :       2rem;
+    }
+}
+
+.aboutme__start {
+    color                   :       $color--clearGray;
+    margin-top              :       auto;
+    margin-bottom           :       auto;
+    padding                 :       1rem;
+}
+
+.aboutme__text--skills {
+    width                   :       80%;
+    margin-left             :       10%;
+    p {
+    background-color        :       $color--darkGray;
+    }
+
+    @include from(cs) {
+    width                   :       50%;
+    margin-left             :       25%;
+    }
+}
+
+.aboutme__skill--design {
+    width                   :       65%;
+}
+
+.aboutme__skill--right {
+    margin-right            :       0;
+    margin-left             :       18%;
+
+    @include from(cs) {
+    margin-right            :       30%;
+    margin-left             :       0;
+    }
+}
+
+.aboutme__skill--left {
+    margin-left             :       18%;
+    @include from(cs) {
+    margin-left             :       30%;
+    }
+}

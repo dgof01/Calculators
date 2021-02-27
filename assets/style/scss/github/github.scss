@@ -1,0 +1,29 @@
+.aboutme--creators {
+    margin-top      :       31rem;
+
+    @include from(c) {
+    margin-top      :       29rem;
+    }
+}
+
+.aboutme__projects__bg--creators {
+    margin-top      :       0;
+}
+
+.aboutme__text--creators {
+    width           :       75%;
+    margin-left     :       auto;
+    margin-right    :       auto;
+
+    @include from(c) {
+    width           :       40%;
+    }
+
+    @include from(lm) {
+    width           :       20%;
+    }
+
+    @include from(hd) {
+    width           :       15%;
+    }
+}

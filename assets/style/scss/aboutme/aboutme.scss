@@ -1,0 +1,76 @@
+.aboutme {
+    display                 :       flex;
+    justify-content         :       center;
+    position                :       absolute;
+    width                   :       100%;
+    background-color        :       $color--darkGray;
+    margin-top              :       $header--height * 2;
+}
+
+.aboutme__icon {
+    position                :       absolute;
+    height                  :       4rem;
+    margin-top              :       -2rem;
+    margin-left             :       var(--margin-left);
+}
+
+.aboutme__info {
+    margin-left             :       var(--margin-left);
+    text-align              :       center;
+    color                   :       $color--green;
+    font-size               :       1rem;
+    padding                 :       3rem 0;
+
+    @include from(xc) {
+    font-size               :       1.10rem;
+    padding                 :       3rem 1rem;
+    }
+}
+
+.aboutme__text {
+    cursor                  :       pointer;
+    display                 :       grid;
+    grid-template-columns   :       repeat(1,1fr);
+
+    p {
+    background-color        :       $background--color;
+    padding                 :       1rem 2rem;
+    margin                  :       1rem;
+    border-radius           :       1rem;
+    }
+
+    @include from(c) {
+    grid-template-columns   :       repeat(2,1fr);
+    }
+}
+
+.aboutme__text--tagline {
+    grid-template-columns   :       repeat(1,1fr);
+}
+
+.aboutme__text--rrss {
+    transition              :       $transition;
+    color                   :       $color--clearGray;
+    grid-template-columns   :       repeat(1,1fr);
+
+    @include from(c) {
+    grid-template-columns   :       repeat(2,1fr);
+    }
+
+    @include from(iPad) {
+    grid-template-columns   :       repeat(4,1fr);
+    }
+}
+
+.aboutme__text--hover {
+    transition              :       $transition;
+    color                   :       inherit;
+    &:hover{
+        color               :       $color--green;
+    }
+
+    a {
+    text-decoration         :       none;
+    color                   :       inherit;
+    }
+}

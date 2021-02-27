@@ -1,0 +1,38 @@
+.titleSection--tools {
+    margin-top              :       32.2rem;
+
+    @include from(c) {
+    margin-top              :       31.5rem;
+    }
+
+    @include from(cs) {
+    margin-top              :       20.25rem;
+    }
+}
+
+.aboutme--tools {
+    margin-top              :       86rem;
+
+    @include from(c) {
+    margin-top              :       71rem; 
+    }
+
+    @include from(cs) {
+    margin-top              :       58rem;
+    }
+
+    @include from(iPad) {
+    margin-top              :       52rem;
+    }
+}
+
+.aboutme__tools {
+    margin-top              :       .5rem;
+}
+
+.aboutme__text--tools {
+    color                   :       $color--green;
+    p {
+    border                  :       1px solid $color--clearGray;
+    }
+}

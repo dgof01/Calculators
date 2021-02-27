@@ -1,0 +1,143 @@
+.calculator {
+    position            :       absolute;
+    margin-top          :       $header--height;
+    max-width           :       $max-width;
+    width               :       100%;
+}
+
+.calculator__content {
+    margin-top          :       $header--height;
+    position            :       relative;
+    background-color    :       $color--darkGray;
+    width               :       80%;
+    padding             :       1.5rem;
+    border-radius       :       1.5rem;
+    margin-left         :       auto;
+    margin-right        :       auto;
+
+    @include from(s) {
+    width               :       60%;
+    }
+
+    @include from(m) {
+    width               :       60%;
+    }
+
+    @include from(lm) {
+    width               :       40%;
+    }
+}
+
+.calculator__result {
+    background-color    :       $background--color;
+    color               :       $color--green;
+    border-radius       :       1rem 1rem 0 0;
+    height              :       3.5rem;
+    margin-top          :       -1.5rem;
+    margin-bottom       :       1.5rem;
+    p {
+        text-align      :       right;
+        font-size       :       1.25rem;
+        padding         :       1rem .5rem;
+
+        @include from(c) {
+        font-size       :       1.5rem;
+        padding         :       .8rem 1rem;
+        }
+    }
+}
+
+.calculator__buttons {
+    background-color    :       $background--color;
+    border-radius       :       inherit;
+    padding             :       .5rem;
+
+    @include from(c) {
+    padding             :       1rem;
+    }
+}
+
+.calculator__row {
+    display             :       grid;
+    grid-template-columns:      repeat(6,1fr);
+    margin              :       .25rem;
+
+    @include from(xc) {
+    margin              :       .5rem;
+    }
+}
+
+.calculator__button {
+    font-size           :       1em;
+    transition          :       $transition;
+    cursor              :       pointer;
+    margin              :       .1rem;
+    padding             :       .25rem;
+    color               :       $color--green;
+    background-color    :       $background--color;
+    border              :       2px solid $color--green;
+    border-radius       :       .5rem;
+    height              :       3.5rem;
+
+    &:hover {
+    color               :       $color--darkGray;
+    background-color    :       $color--clearGray;
+    border-color        :       $color--darkGray;
+    }
+
+    &:focus {
+    outline             :       none;
+    }
+
+    @include from(galaxyfold) {
+    font-size           :       1.25em;
+    margin              :       .25rem;
+    border-radius       :       1rem;
+    }
+
+    @include from(iPhone5-SE) {
+    font-size           :       1em;
+    margin              :       .1rem;
+    padding             :       .5rem .25rem;
+    border-radius       :       .5rem;
+
+    }
+
+    @include from(xc) {
+    font-size           :       1em;
+    margin              :       .15rem;
+    padding             :       .5rem;
+    border-radius       :       .5rem;
+    }
+
+    @include from(m) {
+    padding             :       .5rem 1rem;
+    margin              :       .25rem;
+    border-radius       :       1rem;
+    }
+}
+
+.calculator__button--howToUse {
+    margin-bottom       :       2rem;
+    @include from(s) {
+        margin-bottom   :       .25rem;
+    }
+}
+
+.button--darkGrey {
+    color               :       $color--green;
+    background-color    :       $color--darkGray;
+}
+
+.button--green {
+    color               :       $color--darkGray;
+    background-color    :       $color--green;
+}
+
+.calculator__row--first {
+    grid-template-columns:      repeat(7,1fr);
+}
+
+.calculator__row--last {
+    grid-template-columns:      repeat(5,1fr);
+}

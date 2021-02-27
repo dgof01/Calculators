@@ -1,0 +1,29 @@
+.inputEvent {
+    display: flex;
+    justify-content: center;
+    z-index: $fixed;
+    margin-top: 1.5rem;
+    input {
+        border-radius: 1rem;
+        border: .25rem solid $color--darkGray;
+        z-index: inherit;
+        box-shadow: none;
+        background-color: $background--color;
+        outline: none;
+        padding: 1rem;
+        width: 60%;
+        color: $color--green;
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: $color--clearGray;
+            opacity: .5;
+        }
+
+        @include from(c) {
+            width: 30%;
+        }
+    }
+}

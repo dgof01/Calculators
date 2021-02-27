@@ -1,0 +1,27 @@
+$font-family            :       'FuturaPT-Heavy';
+$background--color      :       #2E2E2E;
+$max-width              :       1920px;
+$header--height         :       4rem;
+$transition             :       1.5s;
+// Colors
+$color--green           :       #5DB53E;
+$color--darkGray        :       #242424;
+$color--clearGray       :       #8C8C8C;
+// Z-index
+$supermodal             :       1100;
+$modal                  :       1000;
+$tooltip                :       900;
+$fixed                  :       10;
+$back                   :       -10;
+
+:root {
+    --margin-left       :       .5rem;
+    
+    @include from(lm) {
+    --margin-left       :       2rem;
+    }
+
+    @include from(hd) {
+    --margin-left       :       3rem;
+    }
+}

@@ -1,0 +1,19 @@
+.footer {
+    background-color    :       $color--darkGray;
+    position            :       fixed;
+    bottom              :       0;
+    left                :       0;
+    height              :       10rem;
+    width               :       100%;
+}
+
+.footer__content {
+    padding             :       2rem 1rem;
+    color               :       $color--green;
+    display             :       grid;
+    grid-template-columns:      repeat(5,1fr);
+}
+
+.footer__info {
+    text-align          :       center;
+}

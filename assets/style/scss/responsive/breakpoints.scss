@@ -1,0 +1,26 @@
+$resolutions : (
+    galaxyfold:     281px,
+    iPhone5-SE:     321px,
+    xc        :     370px,
+    c         :     480px,
+    cs        :     570px,
+    s         :     640px,
+    iPad      :     768px,
+    m         :     800px,
+    l         :     960px,
+    lm        :     1200px,
+    hd        :     1920px
+) !default;
+
+@mixin from($res) {
+    @if map-has-key($resolutions, $res) {
+      @media screen and (min-width : map_get($resolutions, $res)) {
+        @content;
+      }
+    } @else {
+      @media screen and (min-width : $res) {
+        @content;
+      }
+    }
+}
+  
