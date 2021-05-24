@@ -25,8 +25,8 @@ const header = () => {
     }
 
 const change__button = () => {
-    if (Currentlocation.href == "http://127.0.0.1/calculator/index" || Currentlocation.href == "http://localhost/calculator/index" 
-    || Currentlocation.href == "http://localhost/calculator/" || Currentlocation.href == "http://127.0.0.1/calculator/") {
+    if (Currentlocation.href == "http://127.0.0.1/calculators/index" || Currentlocation.href == "http://localhost/calculators/index" 
+    || Currentlocation.href == "http://localhost/calculators/" || Currentlocation.href == "http://127.0.0.1/calculators/") {
         var change = document.getElementById('Change'),
             howtoUse = document.getElementById('howToUse')
         change.addEventListener('click', (e) => {
@@ -36,7 +36,7 @@ const change__button = () => {
             hover.classList.toggle("hover--selected")
         })
         howtoUse.addEventListener('click', (e) => {
-            load__page('/calculator/assets/pags/howToUse')
+            load__page('/calculators/assets/pags/howToUse')
         })
     } else {}
 }
@@ -49,18 +49,18 @@ const load__page = (url) => {
 const link__action = (e) => {
     switch (e.target.id) {
         case "Scientific":
-                load__page('/calculator/assets/pags/scientific')
+                load__page('/calculators/assets/pags/scientific')
             break;
         case "Binary":
-                load__page('/calculator/assets/pags/binary')
+                load__page('/calculators/assets/pags/binary')
             break;
         case "Currency":
-                load__page('/calculator/assets/pags/currency')
+                load__page('/calculators/assets/pags/currency')
             break;
         case "Matrix":
-                load__page('/calculator/assets/pags/matrix')
+                load__page('/calculators/assets/pags/matrix')
             break;    
-        default: load__page('/calculator/index')
+        default: load__page('/calculators/index')
             break;
     }
 }
@@ -68,12 +68,12 @@ const link__action = (e) => {
 const img__action = (e) => {
     switch (e.target.id) {
         case "github":
-                load__page('/calculator/assets/pags/github')
+                load__page('/calculators/assets/pags/github')
             break;
         case "calculator":
-                load__page('/calculator/index')
+                load__page('/calculators/index')
             break;
-        default: load__page('/calculator/assets/pags/aboutme')
+        default: load__page('/calculators/assets/pags/aboutme')
             break;
     }
 }
